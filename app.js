@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080; //
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURI = 'mongodb+srv://sammy:qweasdzxc@cluster1.vnh9c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; 
+const dbURI = 'mongodb+srv://sammy:qweasdzxc@cluster1.vnh9c.mongodb.net/blogs?retryWrites=true&w=majority'; 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result => app.listen(port))
   .catch(err => console.log(err));
